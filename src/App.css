@@ -1,0 +1,61 @@
+*{
+  margin:0;
+}
+.App{
+  background-color: #f1f2f8;
+  height: 100%;
+}
+.app__header{
+  background-color: #ffffff;
+  border-bottom: 2px solid lightgray;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  align-items: center;
+}
+.app__loginContainer{
+  display: flex;
+}
+.app__signup{
+  display: flex;
+  flex-direction: column;
+}
+.input__logo{
+  margin-bottom: 10px;
+}
+.app__headerImage{
+  object-fit: contain;
+  height: 28px;
+}
+.app__posts{
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+.app__postRight{
+  margin-left: 20px;
+  object-fit: contain;
+  max-width: 250px;
+}
+.app__imageuploader{
+  position: sticky;
+  bottom: 0;
+  background-color: #ffffff;
+}
+.app__instagramEmbed{
+  object-fit: contain;
+  width: 50px;
+}
+@media (max-width:990px){
+  .app__posts{
+    flex-direction: column;
+  }
+  .app__postRight{
+    display: none;
+    margin-left: 0;
+    justify-content: center;
+  }
+}
